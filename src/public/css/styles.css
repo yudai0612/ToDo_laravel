@@ -1,0 +1,194 @@
+body {
+  font-family: 'arial unicode ms';
+  font-size: 12px;
+  color: dimgray;
+}
+.container {
+  width: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+.container .footer {
+  position: absolute;
+  top: 720px;
+  margin-left: 10px;
+  font-size: 2px;
+  color: gainsboro;
+}
+h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+h1 .header-menu {
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+}
+h1 .header-menu i {
+  margin-top: 15px;
+}
+a {
+  color: dimgray;
+  transition: 0.5s;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+.error {
+  font-size: 10px;
+  color: tomato;
+}
+#searchButton {
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 2pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 5px;
+  margin: 0 5px;
+  transition: 0.5s;
+  line-height: 1em;
+  width: 45px;
+  background: steelblue;
+  color: white;
+  border: 2px solid steelblue;
+}
+#searchButton:hover {
+  color: steelblue;
+  background: white;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 200px;
+  height: 15px;
+  padding: 5px;
+  background: white;
+  border: 2px solid gainsboro;
+}
+input[type="text"]::placeholder {
+  color: gainsboro;
+  font-size: 1px;
+}
+input[type="text"]:hover {
+  background: gainsboro;
+}
+input[type="text"][name="deadline"] {
+  width: 147px;
+}
+.createForm {
+  padding: 0 5px;
+}
+.createForm button {
+  font-size: 15px;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.currentPost {
+  padding: 0 5px;
+}
+.message {
+  text-align: center;
+  font-size: 12px;
+  color: steelblue;
+  margin: 40px 0;
+}
+.listWrapper {
+  height: 432px;
+  overflow: scroll;
+  border-top: 1px dashed gainsboro;
+  border-bottom: 1px dashed gainsboro;
+  padding: 0 5px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  position: relative;
+}
+ul li .num {
+  position: absolute;
+  top: 80px;
+  right: 5px;
+  font-size: 2px;
+  color: gainsboro;
+}
+.oneTodo {
+  width: 90%;
+  height: 100px;
+  margin: 5px 0;
+  padding: 0 5%;
+  border: 1px solid gainsboro;
+  clear: both;
+  overflow: auto;
+}
+.oneTodo#create {
+  border: 2px solid gainsboro;
+}
+.oneTodo#edit {
+  border: 2px solid steelblue;
+}
+.oneTodo#search {
+  border: 2px solid steelblue;
+}
+.oneTodo .basicInfo {
+  float: left;
+}
+.oneTodo .basicInfo p {
+  margin: 10px 0;
+}
+.oneTodo .basicInfo .boxed {
+  background: gainsboro;
+  color: white;
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 5pt;
+  text-align: center;
+  padding: 6px 5px;
+  line-height: 1em;
+  width: 40px;
+}
+.oneTodo .iconButton {
+  float: right;
+  margin-top: 10px;
+}
+.oneTodo .iconButton * {
+  float: left;
+  margin: 0 2px;
+}
+.oneTodo .iconButton i {
+  margin-top: 2px;
+}
+.oneTodo .iconButton .button {
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 2pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 5px;
+  margin: 0 5px;
+  transition: 0.5s;
+  line-height: 1em;
+  width: 45px;
+}
+.oneTodo .iconButton .button.done {
+  background: steelblue;
+  color: white;
+  border: 2px solid steelblue;
+}
+.oneTodo .iconButton .button.done:hover {
+  color: steelblue;
+  background: white;
+}
+.oneTodo .iconButton .button.yet {
+  background: dimgray;
+  color: white;
+  border: 2px solid dimgray;
+}
+.oneTodo .iconButton .button.yet:hover {
+  color: dimgray;
+  background: white;
+}

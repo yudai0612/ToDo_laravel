@@ -1,0 +1,240 @@
+$dark-color: dimgray;
+$light-color: gainsboro;
+$effect-color: steelblue;
+
+body {
+    font-family: 'arial unicode ms';
+    font-size: 12px;
+    color: $dark-color;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+
+    .footer {
+        position: absolute;
+        top: 720px;
+        margin-left: 10px;
+        font-size: 2px;
+        color: $light-color;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+
+    .header-menu {
+        font-size: 12px;
+        font-weight: normal;
+        float: right;
+
+        i {
+            margin-top: 15px;
+        }
+    }
+}
+
+a {
+    color: $dark-color;
+    transition: 0.5s;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+
+}
+
+.error {
+    font-size: 10px;
+    color: tomato;
+}
+
+#searchButton {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 2pt;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 5px;
+    margin: 0 5px;
+    transition: 0.5s;
+    line-height: 1em;
+    width: 45px;
+    background: $effect-color;
+    color: white;
+    border: 2px solid $effect-color;
+
+    &:hover {
+        color: $effect-color;
+        background: white;
+    }
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 200px;
+    height: 15px;
+    padding: 5px;
+    background: white;
+    border: 2px solid $light-color;
+
+    &::placeholder {
+        color: $light-color;
+        font-size: 1px;
+    }
+
+    &:hover {
+        background: $light-color;
+    }
+
+    &[name="deadline"] {
+        width: 147px;
+    }
+}
+
+.createForm {
+    padding: 0 5px;
+
+    button {
+        font-size: 15px;
+        border: 0px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.currentPost {
+    padding: 0 5px;
+}
+
+.message {
+    text-align: center;
+    font-size: 12px;
+    color: $effect-color;
+    margin: 40px 0;
+}
+
+.listWrapper {
+    height: 432px;
+    overflow: scroll;
+    border-top: 1px dashed $light-color;
+    border-bottom: 1px dashed $light-color;
+    padding: 0 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        position: relative;
+
+        .num {
+            position: absolute;
+            top: 80px;
+            right: 5px;
+            font-size: 2px;
+            color: $light-color;
+        }
+    }
+}
+
+.oneTodo {
+    width: 90%;
+    height: 100px;
+    margin: 5px 0;
+    padding: 0 5%;
+    border: 1px solid $light-color;
+    clear: both;
+    overflow: auto;
+
+    &#create {
+        border: 2px solid $light-color;
+    }
+
+    &#edit {
+        border: 2px solid $effect-color;
+    }
+
+    &#search {
+        border: 2px solid $effect-color;
+    }
+
+    .basicInfo {
+        float: left;
+
+        p {
+            margin: 10px 0;
+        }
+
+        .boxed {
+            background: $light-color;
+            color: white;
+            display: inline-block;
+            border-radius: 5%;
+            font-size: 5pt;
+            text-align: center;
+            padding: 6px 5px;
+            line-height: 1em;
+            width: 40px;
+        }
+    }
+
+    .iconButton {
+        float: right;
+        margin-top: 10px;
+
+        * {
+            float: left;
+            margin: 0 2px;
+        }
+
+        i {
+            margin-top: 2px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 5%;
+            font-size: 2pt;
+            text-align: center;
+            cursor: pointer;
+            padding: 6px 5px;
+            margin: 0 5px;
+            transition: 0.5s;
+            line-height: 1em;
+            width: 45px;
+
+
+            &.done {
+                background: $effect-color;
+                color: white;
+                border: 2px solid $effect-color;
+
+                &:hover {
+                    color: $effect-color;
+                    background: white;
+                }
+            }
+
+            &.yet {
+                background: $dark-color;
+                color: white;
+                border: 2px solid $dark-color;
+
+                &:hover {
+                    color: $dark-color;
+                    background: white;
+                }
+            }
+        }
+    }
+
+
+
+}
